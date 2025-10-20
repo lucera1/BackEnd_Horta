@@ -6,6 +6,7 @@ import com.estagio.repositories.ClienteRepository;
 import com.estagio.services.exceptions.DataIntegrityViolationException;
 import com.estagio.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public class ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepo;
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     public List<ClienteDTO> findAll(){
         return clienteRepo.findAll().stream()
@@ -40,6 +44,8 @@ public class ClienteService {
 
     public Cliente create(ClienteDTO objDto){
         objDto.setId(null);
+        objDto.setPassword(encoder.encode(objDto.getPassword()));
+
         ValidaPorCPFeEmail(objDto);
         Cliente newObj = new Cliente(objDto);
         return clienteRepo.save(newObj);

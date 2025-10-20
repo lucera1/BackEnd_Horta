@@ -11,6 +11,7 @@ import com.estagio.domains.produtos.Produto;
 import com.estagio.repositories.*;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -35,6 +36,9 @@ public class DBService {
 
     @Autowired
     private ProdutoRepository produtoRepo;
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     @Transactional
     public void initDB() {
@@ -62,11 +66,11 @@ public class DBService {
 
         // cria cliente e salva
         Cliente cliente1 = new Cliente(null,"Guilherme", "Lucera", "000.000.000-00",
-                "gui@gmail.com", "1234", TipoUsuario.CLIENTE);
+                "gui@gmail.com", encoder.encode("123"), TipoUsuario.CLIENTE);
         cliente1 = clienteRepo.save(cliente1);
 
         Cliente cliente2 = new Cliente(null, "João", "Silva", "111.111.111-11",
-                "joao@gmail.com", "4321", TipoUsuario.CLIENTE);
+                "joao@gmail.com", encoder.encode("1234"), TipoUsuario.CLIENTE);
         cliente2 = clienteRepo.save(cliente2);
 
 
