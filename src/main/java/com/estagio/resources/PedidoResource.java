@@ -32,11 +32,17 @@ public class PedidoResource {
     }
 
     @PostMapping
-    public ResponseEntity<PedidoDTO> create(@Valid @RequestBody PedidoDTO objDto){
+    public ResponseEntity<PedidoDTO> create(@Valid @RequestBody PedidoDTO objDto) {
         Pedido newObj = pedidoService.create(objDto);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(newObj.getId()).toUri();
-        return ResponseEntity.created(uri).build();
+        PedidoDTO dto = new PedidoDTO(newObj);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(newObj.getId())
+                .toUri();
+
+        return ResponseEntity.created(uri).body(dto);
     }
+
 
     @PutMapping(value = "/{id}")
 
