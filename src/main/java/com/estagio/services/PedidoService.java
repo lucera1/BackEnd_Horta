@@ -55,7 +55,7 @@ public class PedidoService {
 
         pedido.setCliente(cliente);
         pedido.setStatusPedido(StatusPedido.AGUARDANDO_PAGAMENTO);
-        pedido.setFormaPagamento(FormaPagamento.valueOf(obj.getFormaPagamento()));
+        pedido.setFormaPagamento(FormaPagamento.valueOf(obj.getFormaPagamento().toUpperCase()));
 
 
         return pedido;

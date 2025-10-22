@@ -49,44 +49,28 @@ public class PedidoDTO {
         this.id = id;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo!" ) Long getCliente() {
+    public @NotNull(message = "O campo não pode ser nulo!") Long getCliente() {
         return cliente;
     }
 
-    public void setCliente(@NotNull( message = "O campo não pode ser nulo!" ) Long cliente) {
+    public void setCliente(@NotNull(message = "O campo não pode ser nulo!") Long cliente) {
         this.cliente = cliente;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo!" ) String getFormaPagamento() {
+    public @NotNull(message = "O campo não pode ser nulo!") String getFormaPagamento() {
         return formaPagamento;
     }
 
-    public void setFormaPagamento(@NotNull( message = "O campo não pode ser nulo!" ) String formaPagamento) {
+    public void setFormaPagamento(@NotNull(message = "O campo não pode ser nulo!") String formaPagamento) {
         this.formaPagamento = formaPagamento;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo!" ) LocalDate getData() {
+    public @NotNull(message = "O campo não pode ser nulo!") LocalDate getData() {
         return data;
     }
 
-    public void setData(@NotNull( message = "O campo não pode ser nulo!" ) LocalDate data) {
+    public void setData(@NotNull(message = "O campo não pode ser nulo!") LocalDate data) {
         this.data = data;
-    }
-
-    public  String getClienteNome() {
-        return clienteNome;
-    }
-
-    public void setClienteNome( String clienteNome) {
-        this.clienteNome = clienteNome;
-    }
-
-    public  String getStatusPedido() {
-        return statusPedido;
-    }
-
-    public void setStatusPedido( String statusPedido) {
-        this.statusPedido = statusPedido;
     }
 
     public BigDecimal getValorTotal() {
@@ -96,6 +80,20 @@ public class PedidoDTO {
     public void setValorTotal(BigDecimal valorTotal) {
         this.valorTotal = valorTotal;
     }
+
+    public String getClienteNome() {
+        return clienteNome;
+    }
+
+    public void setClienteNome(String clienteNome) {
+        this.clienteNome = clienteNome;
+    }
+
+    public String getStatusPedido() {
+        return statusPedido;
+    }
+
+    public void setStatusPedido(String statusPedido) {
+        this.statusPedido = statusPedido;
+    }
 }
-
-

@@ -72,7 +72,7 @@ public class Pedido {
         this.data = dto.getData();
         this.estadoPedido = new Aguardando(this);
         this.statusPedido = StatusPedido.AGUARDANDO_PAGAMENTO;
-        this.formaPagamento = FormaPagamento.valueOf(dto.getFormaPagamento());
+        this.formaPagamento = FormaPagamento.valueOf(dto.getFormaPagamento().toUpperCase());
         this.valorTotal = getValorTotal();
     }
 
