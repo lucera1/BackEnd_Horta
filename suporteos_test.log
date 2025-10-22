@@ -19315,3 +19315,2137 @@ java.lang.IllegalArgumentException: No enum constant com.estagio.domains.enums.F
 2025-10-22T16:57:31.445-03:00  WARN 16628 --- [horta] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
 2025-10-22T16:57:31.445-03:00  INFO 16628 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-10-22T16:57:31.446-03:00  INFO 16628 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-22T17:00:57.675-03:00  INFO 16884 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : Starting HortaApplication using Java 21.0.3 with PID 16884 (C:\Users\srgood\Downloads\clone\BackEnd_Horta\target\classes started by srgood in C:\Users\srgood\Downloads\clone\BackEnd_Horta)
+2025-10-22T17:00:57.677-03:00  INFO 16884 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : The following 1 profile is active: "test"
+2025-10-22T17:00:57.719-03:00  INFO 16884 --- [horta] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T17:00:57.719-03:00  INFO 16884 --- [horta] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T17:00:58.185-03:00  INFO 16884 --- [horta] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-22T17:00:58.228-03:00  INFO 16884 --- [horta] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2025-10-22T17:00:58.944-03:00  INFO 16884 --- [horta] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-22T17:00:58.957-03:00  INFO 16884 --- [horta] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T17:00:58.958-03:00  INFO 16884 --- [horta] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-10-22T17:00:58.994-03:00  INFO 16884 --- [horta] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T17:00:58.994-03:00  INFO 16884 --- [horta] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
+2025-10-22T17:00:59.116-03:00  INFO 16884 --- [horta] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T17:00:59.278-03:00  INFO 16884 --- [horta] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursodb user=SA
+2025-10-22T17:00:59.280-03:00  INFO 16884 --- [horta] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T17:00:59.336-03:00  INFO 16884 --- [horta] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-22T17:00:59.382-03:00  INFO 16884 --- [horta] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-10-22T17:00:59.407-03:00  INFO 16884 --- [horta] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-22T17:00:59.464-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2ad9ebb3
+2025-10-22T17:00:59.464-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2ad9ebb3
+2025-10-22T17:00:59.464-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@2ad9ebb3
+2025-10-22T17:00:59.464-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@2246f21d
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@2246f21d
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@5b788673
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@5b788673
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@18a925c9
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@18a925c9
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7dc8d11c
+2025-10-22T17:00:59.465-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7dc8d11c
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7dc8d11c
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@680b02a2
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@680b02a2
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@680b02a2
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@77df4ace
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@77df4ace
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@2609ae91
+2025-10-22T17:00:59.466-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@1df2db7d
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@1df2db7d
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@2d5cc473
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@2058722c
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4b4e3d90
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4b4e3d90
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@4b4e3d90
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@406c3eb7
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@406c3eb7
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@406c3eb7
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@bd80595
+2025-10-22T17:00:59.467-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@bd80595
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@bd80595
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@6872dfd0
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@6872dfd0
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@6872dfd0
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@526acdf3
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@526acdf3
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@526acdf3
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@7352c88f
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@7352c88f
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@386d9fdd
+2025-10-22T17:00:59.468-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@386d9fdd
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@461f5b5f
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@461f5b5f
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@461f5b5f
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@429e033a
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@276dbd56
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@276dbd56
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@732a5d11
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@4f532588
+2025-10-22T17:00:59.469-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@4f532588
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@4f532588
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@7de6788b
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@372bfd6c
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@1648ec4d
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@40e1e469
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@40e1e469
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@e8deede
+2025-10-22T17:00:59.470-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@e8deede
+2025-10-22T17:00:59.471-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@6625b2fe
+2025-10-22T17:00:59.471-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@37de10f3
+2025-10-22T17:00:59.471-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@785368cd
+2025-10-22T17:00:59.471-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@19c99207
+2025-10-22T17:00:59.471-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@52307182
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@152ebabf
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7658bdd7
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7658bdd7
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@23d450b1
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@23d450b1
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@72398928
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@72398928
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@12223e92
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@12223e92
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@21a79f04
+2025-10-22T17:00:59.472-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@21a79f04
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@20770259
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1eb9bfb6
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@1decd45d
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@1decd45d
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@2e375b
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@18d388cd
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4bc4c06e
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@30f1bb77
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@30f1bb77
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4194c6dd
+2025-10-22T17:00:59.473-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4585abc2
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@282fd4ac
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@282fd4ac
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@15b8f8dd
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@15b8f8dd
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@727d6699
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@727d6699
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@727d6699
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@1ace18af
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@1ace18af
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@1ace18af
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@4c1235ee
+2025-10-22T17:00:59.474-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@1e3e42a1
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@76eb651
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@76eb651
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@6d8fcd73
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@6d8fcd73
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@6d8fcd73
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@306f3869
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@5c285f8f
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@2e06b665
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@2e06b665
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@3df11283
+2025-10-22T17:00:59.475-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@3df11283
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@3df11283
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@7414d924
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@7414d924
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@6ade340e
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@6ade340e
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@71f002ae
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@71f002ae
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@44a06319
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@44a06319
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@162f4f50
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@162f4f50
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@d4a77df
+2025-10-22T17:00:59.476-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@7c5ee1aa
+2025-10-22T17:00:59.477-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@3ba1ed93
+2025-10-22T17:00:59.477-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@57986078
+2025-10-22T17:00:59.477-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@93201db
+2025-10-22T17:00:59.480-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@c99c933
+2025-10-22T17:00:59.481-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@c99c933
+2025-10-22T17:00:59.481-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@3f9cc1f8
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@24c9245a
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@5c1b269e
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@6087f9a7
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@394d774e
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@54cb7fc9
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@51619c18
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@ef41d52
+2025-10-22T17:00:59.482-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@5cd1fcc5
+2025-10-22T17:00:59.649-03:00  INFO 16884 --- [horta] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-22T17:00:59.708-03:00  INFO 16884 --- [horta] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-22T17:00:59.714-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-10-22T17:00:59.714-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-10-22T17:00:59.714-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-10-22T17:00:59.716-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-10-22T17:00:59.717-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-10-22T17:00:59.723-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:00:59.723-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:00:59.723-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:00:59.726-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a56a152] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6005f506]
+2025-10-22T17:01:00.399-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create global temporary table HT_cliente(id bigint not null, primary key (id)) TRANSACTIONAL
+2025-10-22T17:01:00.407-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create global temporary table HTE_cliente(created_at date, id bigint not null, cpf varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), tipo_usuario enum ('ADMIN', 'CLIENTE'), primary key (id)) TRANSACTIONAL
+2025-10-22T17:01:00.523-03:00  INFO 16884 --- [horta] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-22T17:01:00.524-03:00 DEBUG 16884 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6a56a152] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@611665ae]
+2025-10-22T17:01:00.533-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cliente cascade 
+2025-10-22T17:01:00.534-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists grupoproduto cascade 
+2025-10-22T17:01:00.534-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pedido cascade 
+2025-10-22T17:01:00.534-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists produto cascade 
+2025-10-22T17:01:00.534-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-10-22T17:01:00.535-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pedido
+2025-10-22T17:01:00.535-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_produto
+2025-10-22T17:01:00.535-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2025-10-22T17:01:00.535-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_venda
+2025-10-22T17:01:00.539-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_pedido start with 1 increment by 1
+2025-10-22T17:01:00.540-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_produto start with 1 increment by 1
+2025-10-22T17:01:00.540-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_usuario start with 1 increment by 1
+2025-10-22T17:01:00.541-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_venda start with 1 increment by 1
+2025-10-22T17:01:00.542-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table cliente (
+        created_at date,
+        id bigint not null,
+        cpf varchar(255) unique,
+        email varchar(255) unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        tipo_usuario enum ('ADMIN','CLIENTE'),
+        primary key (id)
+    )
+2025-10-22T17:01:00.544-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table grupoproduto (
+        tipo_produto tinyint check (tipo_produto between 0 and 1),
+        id bigint not null,
+        descricao varchar(255) not null,
+        primary key (id)
+    )
+2025-10-22T17:01:00.547-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table pedido (
+        data date,
+        valor_total numeric(38,2),
+        cliente bigint,
+        id bigint not null,
+        forma_pagamento enum ('DINHEIRO','PIX'),
+        status_pedido enum ('AGUARDANDO_PAGAMENTO','CANCELADO','ENTREGUE','PREPARANDO'),
+        primary key (id)
+    )
+2025-10-22T17:01:00.548-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table produto (
+        preco numeric(17,2) not null,
+        qtd_estoque integer,
+        id bigint not null,
+        id_grupo_produto bigint,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2025-10-22T17:01:00.549-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        quantidade integer,
+        sub_total numeric(38,2),
+        cliente_id bigint,
+        id bigint not null,
+        pedido_id bigint,
+        produto_id bigint not null,
+        primary key (id)
+    )
+2025-10-22T17:01:00.550-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pedido 
+       add constraint FK3n7g0gf9fttq3pr3rqa76gg54 
+       foreign key (cliente) 
+       references cliente
+2025-10-22T17:01:00.557-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists produto 
+       add constraint FKraiay981b28kd38yuonxic925 
+       foreign key (id_grupo_produto) 
+       references grupoproduto
+2025-10-22T17:01:00.558-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FK50murhuotq9h2dnxej317jjiy 
+       foreign key (cliente_id) 
+       references cliente
+2025-10-22T17:01:00.559-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKqpyibmhemoyrwumfhbqop8xld 
+       foreign key (pedido_id) 
+       references pedido
+2025-10-22T17:01:00.560-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKppe4v1vxm9voncsp5d2753yws 
+       foreign key (produto_id) 
+       references produto
+2025-10-22T17:01:00.564-03:00 TRACE 16884 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@611665ae] for TypeConfiguration
+2025-10-22T17:01:00.564-03:00  INFO 16884 --- [horta] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T17:01:00.914-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:01:00.958-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:01:00.959-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:01:00.963-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:01:00.964-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:01:01.038-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2025-10-22T17:01:01.099-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2025-10-22T17:01:01.100-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pedido
+2025-10-22T17:01:01.102-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pedido
+2025-10-22T17:01:01.102-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:01:01.103-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:01:01.103-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:01:01.104-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:01:01.132-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        grupoproduto
+        (descricao, tipo_produto, id) 
+    values
+        (?, ?, ?)
+2025-10-22T17:01:01.136-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        grupoproduto
+        (descricao, tipo_produto, id) 
+    values
+        (?, ?, ?)
+2025-10-22T17:01:01.137-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:01:01.138-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:01:01.139-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:01:01.139-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cliente
+        (cpf, created_at, email, first_name, last_name, password, tipo_usuario, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.141-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cliente
+        (cpf, created_at, email, first_name, last_name, password, tipo_usuario, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.142-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pedido
+        (cliente, data, forma_pagamento, status_pedido, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.142-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pedido
+        (cliente, data, forma_pagamento, status_pedido, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.143-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.143-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.144-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.144-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:01:01.147-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:01:01.151-03:00 DEBUG 16884 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:01:01.190-03:00  WARN 16884 --- [horta] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-22T17:01:01.218-03:00  INFO 16884 --- [horta] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-22T17:01:01.582-03:00  INFO 16884 --- [horta] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursodb'
+2025-10-22T17:01:01.631-03:00  INFO 16884 --- [horta] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T17:01:01.659-03:00  INFO 16884 --- [horta] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-22T17:01:01.666-03:00  INFO 16884 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : Started HortaApplication in 4.418 seconds (process running for 4.79)
+2025-10-22T17:01:04.490-03:00  INFO 16884 --- [horta] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T17:01:04.490-03:00  INFO 16884 --- [horta] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T17:01:04.493-03:00  INFO 16884 --- [horta] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-22T17:01:04.667-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:01:04.697-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:01:04.701-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:01:04.702-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:01:15.391-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:01:16.827-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:01:21.215-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:01:22.400-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:01:22.403-03:00 DEBUG 16884 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0
+2025-10-22T17:03:48.357-03:00  INFO 16884 --- [horta] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:03:48.359-03:00  INFO 16884 --- [horta] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T17:03:48.363-03:00  INFO 16884 --- [horta] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T17:03:48.364-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists cliente cascade 
+2025-10-22T17:03:48.366-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists grupoproduto cascade 
+2025-10-22T17:03:48.367-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pedido cascade 
+2025-10-22T17:03:48.367-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists produto cascade 
+2025-10-22T17:03:48.368-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-10-22T17:03:48.368-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pedido
+2025-10-22T17:03:48.368-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_produto
+2025-10-22T17:03:48.369-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2025-10-22T17:03:48.369-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_venda
+2025-10-22T17:03:48.369-03:00 TRACE 16884 --- [horta] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@611665ae] for TypeConfiguration
+2025-10-22T17:03:48.370-03:00 DEBUG 16884 --- [horta] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@768ecd51] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@611665ae]
+2025-10-22T17:03:48.374-03:00  WARN 16884 --- [horta] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-22T17:03:48.374-03:00  INFO 16884 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T17:03:48.379-03:00  INFO 16884 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-22T17:11:49.587-03:00  INFO 16044 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : Starting HortaApplication using Java 21.0.3 with PID 16044 (C:\Users\srgood\Downloads\clone\BackEnd_Horta\target\classes started by srgood in C:\Users\srgood\Downloads\clone\BackEnd_Horta)
+2025-10-22T17:11:49.589-03:00  INFO 16044 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : The following 1 profile is active: "test"
+2025-10-22T17:11:49.633-03:00  INFO 16044 --- [horta] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T17:11:49.633-03:00  INFO 16044 --- [horta] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T17:11:50.080-03:00  INFO 16044 --- [horta] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-22T17:11:50.123-03:00  INFO 16044 --- [horta] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2025-10-22T17:11:50.831-03:00  INFO 16044 --- [horta] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-22T17:11:50.846-03:00  INFO 16044 --- [horta] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T17:11:50.846-03:00  INFO 16044 --- [horta] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-10-22T17:11:50.890-03:00  INFO 16044 --- [horta] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T17:11:50.891-03:00  INFO 16044 --- [horta] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1257 ms
+2025-10-22T17:11:51.022-03:00  INFO 16044 --- [horta] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T17:11:51.187-03:00  INFO 16044 --- [horta] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursodb user=SA
+2025-10-22T17:11:51.189-03:00  INFO 16044 --- [horta] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T17:11:51.243-03:00  INFO 16044 --- [horta] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-22T17:11:51.314-03:00  INFO 16044 --- [horta] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-10-22T17:11:51.347-03:00  INFO 16044 --- [horta] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-22T17:11:51.418-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@4146f3f8
+2025-10-22T17:11:51.418-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@4146f3f8
+2025-10-22T17:11:51.418-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@4146f3f8
+2025-10-22T17:11:51.418-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@f5dbcc4
+2025-10-22T17:11:51.418-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@f5dbcc4
+2025-10-22T17:11:51.419-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@b62e132
+2025-10-22T17:11:51.419-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@b62e132
+2025-10-22T17:11:51.419-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@4597397f
+2025-10-22T17:11:51.419-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@4597397f
+2025-10-22T17:11:51.419-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@33b8db06
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@33b8db06
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@33b8db06
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@5161ea29
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@5161ea29
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@5161ea29
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@4d16ea46
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@4d16ea46
+2025-10-22T17:11:51.420-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@31b66e5a
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@44a3e381
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@44a3e381
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@1a4d799e
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@6073f44b
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@623592a1
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@623592a1
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@623592a1
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@39d1ca8d
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@39d1ca8d
+2025-10-22T17:11:51.421-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@39d1ca8d
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@48a1c5a0
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@48a1c5a0
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@48a1c5a0
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@370fa153
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@370fa153
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@370fa153
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@79618d89
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@79618d89
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@79618d89
+2025-10-22T17:11:51.422-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@4e53a58a
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@4e53a58a
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@819f525
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@819f525
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@42d6c84c
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@42d6c84c
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@42d6c84c
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@37ae185a
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@648284d0
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@648284d0
+2025-10-22T17:11:51.423-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@23f5f5b8
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@5715cd22
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@5715cd22
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@5715cd22
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@10be6352
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@60ead191
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@6c3eb001
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@15bb0c79
+2025-10-22T17:11:51.424-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@15bb0c79
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@767c596f
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@767c596f
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@402c6868
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@598b66d4
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@149e7158
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@bdf585
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@23f1b2d2
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@214ecdbe
+2025-10-22T17:11:51.425-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@463d6c7e
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@463d6c7e
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@29c3a8e1
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@29c3a8e1
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@70af829
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@70af829
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@507ee64b
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@507ee64b
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@7d8d2ea6
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@7d8d2ea6
+2025-10-22T17:11:51.426-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@49bd1556
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@192667f8
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@3ecd9629
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@3ecd9629
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@2aa16748
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@b17d0ef
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@21247fd2
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@738ac901
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@738ac901
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@52307b1f
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6795491e
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@65cd70d1
+2025-10-22T17:11:51.427-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@65cd70d1
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@402a6fa8
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@402a6fa8
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@11131c31
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@11131c31
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@11131c31
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@5c037ab4
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@5c037ab4
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@5c037ab4
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@52c6d21d
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@4102a0c2
+2025-10-22T17:11:51.428-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@4879de47
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@4879de47
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@f68db26
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@f68db26
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@f68db26
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@6b5aa6ec
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@3f8a0ff5
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@398765a5
+2025-10-22T17:11:51.429-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@398765a5
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@70ff2858
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@70ff2858
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@70ff2858
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@4eac8d6d
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@4eac8d6d
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@2136d6ea
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@2136d6ea
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@231e3524
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@231e3524
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@2a2a74f7
+2025-10-22T17:11:51.430-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@2a2a74f7
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@c7533a
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@c7533a
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@17d1544e
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@4534e485
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@3cc0bd18
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@6a47739
+2025-10-22T17:11:51.431-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@1bca3087
+2025-10-22T17:11:51.436-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@247bdd16
+2025-10-22T17:11:51.436-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@247bdd16
+2025-10-22T17:11:51.437-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@4c095d37
+2025-10-22T17:11:51.437-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@736a8eaf
+2025-10-22T17:11:51.437-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@6f95e4a
+2025-10-22T17:11:51.437-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@7bed17be
+2025-10-22T17:11:51.437-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@7d8b1d11
+2025-10-22T17:11:51.438-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@5a33ebf9
+2025-10-22T17:11:51.438-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1674e5fb
+2025-10-22T17:11:51.438-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@537506c
+2025-10-22T17:11:51.438-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@20f1a64e
+2025-10-22T17:11:51.612-03:00  INFO 16044 --- [horta] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-22T17:11:51.690-03:00  INFO 16044 --- [horta] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-22T17:11:51.700-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-10-22T17:11:51.701-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-10-22T17:11:51.701-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-10-22T17:11:51.704-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-10-22T17:11:51.706-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-10-22T17:11:51.712-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:11:51.712-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:11:51.712-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-10-22T17:11:51.717-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@26dbf68c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@530d935]
+2025-10-22T17:11:52.466-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create global temporary table HT_cliente(id bigint not null, primary key (id)) TRANSACTIONAL
+2025-10-22T17:11:52.473-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create global temporary table HTE_cliente(created_at date, id bigint not null, cpf varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), tipo_usuario enum ('ADMIN', 'CLIENTE'), primary key (id)) TRANSACTIONAL
+2025-10-22T17:11:52.602-03:00  INFO 16044 --- [horta] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-22T17:11:52.603-03:00 DEBUG 16044 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@26dbf68c] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@2374487d]
+2025-10-22T17:11:52.615-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists cliente cascade 
+2025-10-22T17:11:52.616-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists grupoproduto cascade 
+2025-10-22T17:11:52.616-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pedido cascade 
+2025-10-22T17:11:52.616-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists produto cascade 
+2025-10-22T17:11:52.616-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-10-22T17:11:52.616-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pedido
+2025-10-22T17:11:52.617-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_produto
+2025-10-22T17:11:52.617-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2025-10-22T17:11:52.617-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_venda
+2025-10-22T17:11:52.621-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_pedido start with 1 increment by 1
+2025-10-22T17:11:52.623-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_produto start with 1 increment by 1
+2025-10-22T17:11:52.623-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_usuario start with 1 increment by 1
+2025-10-22T17:11:52.623-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_venda start with 1 increment by 1
+2025-10-22T17:11:52.626-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table cliente (
+        created_at date,
+        id bigint not null,
+        cpf varchar(255) unique,
+        email varchar(255) unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        tipo_usuario enum ('ADMIN','CLIENTE'),
+        primary key (id)
+    )
+2025-10-22T17:11:52.629-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table grupoproduto (
+        tipo_produto tinyint check (tipo_produto between 0 and 1),
+        id bigint not null,
+        descricao varchar(255) not null,
+        primary key (id)
+    )
+2025-10-22T17:11:52.633-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table pedido (
+        data date,
+        valor_total numeric(38,2),
+        cliente bigint,
+        id bigint not null,
+        forma_pagamento enum ('DINHEIRO','PIX'),
+        status_pedido enum ('AGUARDANDO_PAGAMENTO','CANCELADO','ENTREGUE','PREPARANDO'),
+        primary key (id)
+    )
+2025-10-22T17:11:52.634-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table produto (
+        preco numeric(17,2) not null,
+        qtd_estoque integer,
+        id bigint not null,
+        id_grupo_produto bigint,
+        nome varchar(255) not null,
+        primary key (id)
+    )
+2025-10-22T17:11:52.635-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        quantidade integer,
+        sub_total numeric(38,2),
+        cliente_id bigint,
+        id bigint not null,
+        pedido_id bigint,
+        produto_id bigint not null,
+        primary key (id)
+    )
+2025-10-22T17:11:52.636-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists pedido 
+       add constraint FK3n7g0gf9fttq3pr3rqa76gg54 
+       foreign key (cliente) 
+       references cliente
+2025-10-22T17:11:52.644-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists produto 
+       add constraint FKraiay981b28kd38yuonxic925 
+       foreign key (id_grupo_produto) 
+       references grupoproduto
+2025-10-22T17:11:52.646-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FK50murhuotq9h2dnxej317jjiy 
+       foreign key (cliente_id) 
+       references cliente
+2025-10-22T17:11:52.647-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKqpyibmhemoyrwumfhbqop8xld 
+       foreign key (pedido_id) 
+       references pedido
+2025-10-22T17:11:52.648-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKppe4v1vxm9voncsp5d2753yws 
+       foreign key (produto_id) 
+       references produto
+2025-10-22T17:11:52.652-03:00 TRACE 16044 --- [horta] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@2374487d] for TypeConfiguration
+2025-10-22T17:11:52.653-03:00  INFO 16044 --- [horta] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T17:11:53.044-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:11:53.092-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:11:53.094-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:11:53.099-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:11:53.100-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_produto
+2025-10-22T17:11:53.170-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2025-10-22T17:11:53.232-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_usuario
+2025-10-22T17:11:53.233-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pedido
+2025-10-22T17:11:53.235-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_pedido
+2025-10-22T17:11:53.236-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:11:53.236-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:11:53.237-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:11:53.237-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_venda
+2025-10-22T17:11:53.259-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        grupoproduto
+        (descricao, tipo_produto, id) 
+    values
+        (?, ?, ?)
+2025-10-22T17:11:53.262-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        grupoproduto
+        (descricao, tipo_produto, id) 
+    values
+        (?, ?, ?)
+2025-10-22T17:11:53.263-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:11:53.265-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:11:53.265-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        produto
+        (id_grupo_produto, nome, preco, qtd_estoque, id) 
+    values
+        (?, ?, ?, ?, ?)
+2025-10-22T17:11:53.266-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cliente
+        (cpf, created_at, email, first_name, last_name, password, tipo_usuario, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.267-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        cliente
+        (cpf, created_at, email, first_name, last_name, password, tipo_usuario, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.268-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pedido
+        (cliente, data, forma_pagamento, status_pedido, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.268-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pedido
+        (cliente, data, forma_pagamento, status_pedido, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.269-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.269-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.270-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.271-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (cliente_id, pedido_id, produto_id, quantidade, sub_total, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2025-10-22T17:11:53.274-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:11:53.277-03:00 DEBUG 16044 --- [horta] [restartedMain] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:11:53.316-03:00  WARN 16044 --- [horta] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-22T17:11:53.344-03:00  INFO 16044 --- [horta] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-10-22T17:11:53.750-03:00  INFO 16044 --- [horta] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursodb'
+2025-10-22T17:11:53.816-03:00  INFO 16044 --- [horta] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T17:11:53.842-03:00  INFO 16044 --- [horta] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-22T17:11:53.854-03:00  INFO 16044 --- [horta] [restartedMain] com.estagio.horta.HortaApplication       : Started HortaApplication in 4.679 seconds (process running for 5.073)
+2025-10-22T17:12:05.078-03:00  INFO 16044 --- [horta] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T17:12:05.078-03:00  INFO 16044 --- [horta] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T17:12:05.079-03:00  INFO 16044 --- [horta] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T17:12:05.289-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:05.441-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:05.449-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.email=?
+2025-10-22T17:12:06.425-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:06.432-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.id_grupo_produto,
+        p1_0.nome,
+        p1_0.preco,
+        p1_0.qtd_estoque 
+    from
+        produto p1_0
+2025-10-22T17:12:06.435-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:12:06.437-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:12:09.710-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:09.713-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:09.714-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:09.716-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:15.653-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:15.656-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0 
+    left join
+        cliente c1_0 
+            on c1_0.id=p1_0.cliente 
+    where
+        p1_0.id=?
+2025-10-22T17:12:15.660-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:12:17.343-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:17.345-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:17.345-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:17.346-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:33.007-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:42.738-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:42.740-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:42.741-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:42.742-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:47.101-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:47.103-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0 
+    left join
+        cliente c1_0 
+            on c1_0.id=p1_0.cliente 
+    where
+        p1_0.id=?
+2025-10-22T17:12:49.363-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:49.365-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0 
+    left join
+        cliente c1_0 
+            on c1_0.id=p1_0.cliente 
+    where
+        p1_0.id=?
+2025-10-22T17:12:49.367-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:12:50.382-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:50.384-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:50.385-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:50.385-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:52.426-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:52.429-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:52.429-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:52.429-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:54.643-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:54.645-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0 
+    left join
+        cliente c1_0 
+            on c1_0.id=p1_0.cliente 
+    where
+        p1_0.id=?
+2025-10-22T17:12:54.647-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        v1_0.pedido_id,
+        v1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario,
+        v1_0.produto_id,
+        p2_0.id,
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto,
+        p2_0.nome,
+        p2_0.preco,
+        p2_0.qtd_estoque,
+        v1_0.quantidade,
+        v1_0.sub_total 
+    from
+        venda v1_0 
+    left join
+        cliente c1_0 
+            on c1_0.id=v1_0.cliente_id 
+    left join
+        produto p2_0 
+            on p2_0.id=v1_0.produto_id 
+    left join
+        grupoproduto gp1_0 
+            on gp1_0.id=p2_0.id_grupo_produto 
+    where
+        v1_0.pedido_id=?
+2025-10-22T17:12:54.652-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        produto 
+    set
+        id_grupo_produto=?,
+        nome=?,
+        preco=?,
+        qtd_estoque=? 
+    where
+        id=?
+2025-10-22T17:12:54.655-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        produto 
+    set
+        id_grupo_produto=?,
+        nome=?,
+        preco=?,
+        qtd_estoque=? 
+    where
+        id=?
+2025-10-22T17:12:54.659-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        pedido 
+    set
+        cliente=?,
+        data=?,
+        forma_pagamento=?,
+        status_pedido=?,
+        valor_total=? 
+    where
+        id=?
+2025-10-22T17:12:54.661-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    delete 
+    from
+        venda 
+    where
+        id=?
+2025-10-22T17:12:54.663-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    delete 
+    from
+        venda 
+    where
+        id=?
+2025-10-22T17:12:55.379-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:55.381-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:55.382-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:55.382-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:57.095-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:12:57.097-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:12:57.097-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:12:57.098-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:13:00.321-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:13:00.323-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.cliente,
+        p1_0.data,
+        p1_0.forma_pagamento,
+        p1_0.status_pedido,
+        p1_0.valor_total 
+    from
+        pedido p1_0
+2025-10-22T17:13:00.324-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:13:00.325-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.password,
+        c1_0.tipo_usuario 
+    from
+        cliente c1_0 
+    where
+        c1_0.id=?
+2025-10-22T17:13:04.318-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.clazz_,
+        u1_0.cpf,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.tipo_usuario 
+    from
+        (select
+            created_at,
+            id,
+            cpf,
+            email,
+            first_name,
+            last_name,
+            password,
+            tipo_usuario,
+            1 as clazz_ 
+        from
+            cliente) u1_0 
+    where
+        u1_0.email=?
+2025-10-22T17:13:04.321-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.id_grupo_produto,
+        p1_0.nome,
+        p1_0.preco,
+        p1_0.qtd_estoque 
+    from
+        produto p1_0
+2025-10-22T17:13:04.322-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:13:04.323-03:00 DEBUG 16044 --- [horta] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        gp1_0.id,
+        gp1_0.descricao,
+        gp1_0.tipo_produto 
+    from
+        grupoproduto gp1_0 
+    where
+        gp1_0.id=?
+2025-10-22T17:13:08.520-03:00  INFO 16044 --- [horta] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T17:13:08.523-03:00  INFO 16044 --- [horta] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T17:13:08.527-03:00  INFO 16044 --- [horta] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T17:13:08.528-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists cliente cascade 
+2025-10-22T17:13:08.529-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists grupoproduto cascade 
+2025-10-22T17:13:08.530-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists pedido cascade 
+2025-10-22T17:13:08.530-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists produto cascade 
+2025-10-22T17:13:08.531-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2025-10-22T17:13:08.531-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_pedido
+2025-10-22T17:13:08.531-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_produto
+2025-10-22T17:13:08.532-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_usuario
+2025-10-22T17:13:08.532-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_venda
+2025-10-22T17:13:08.532-03:00 TRACE 16044 --- [horta] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@2374487d] for TypeConfiguration
+2025-10-22T17:13:08.532-03:00 DEBUG 16044 --- [horta] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@51eb72fe] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2374487d]
+2025-10-22T17:13:08.537-03:00  WARN 16044 --- [horta] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-22T17:13:08.537-03:00  INFO 16044 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T17:13:08.538-03:00  INFO 16044 --- [horta] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
