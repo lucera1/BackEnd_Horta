@@ -35,12 +35,12 @@ public class ProdutoResource {
     @PostMapping
     public ResponseEntity<ProdutoDTO> create(@Valid @RequestBody ProdutoDTO dto){
         Produto produto = produtoService.create(dto);
-        //Cria a URI para o recurso criado
+        ProdutoDTO responseDto = new ProdutoDTO(produto); // converte para DTO
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(produto.getId()).toUri();
-        //Retorna a resposta com o status 201 Created e o local do recurso criado
-        return ResponseEntity.created(uri).build();
+        return ResponseEntity.created(uri).body(responseDto); // agora envia o DTO no corpo
     }
+
 
     @PutMapping(value = "/{id}")
     public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @Valid @RequestBody ProdutoDTO objDto){

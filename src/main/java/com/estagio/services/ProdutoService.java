@@ -37,10 +37,24 @@ public class ProdutoService {
 
     public Produto create(ProdutoDTO dto){
         dto.setId(null);
-        validaProduto(dto);
-        Produto obj = new Produto(dto);
+
+        // Buscar o grupo de produto
+        GrupoProduto grupoProduto = grupoProdutoRepo.findById(dto.getGrupoProduto())
+                .orElseThrow(() -> new DataIntegrityViolationException(
+                        "Grupo de Produto -" + dto.getGrupoProduto() + " não está cadastrado!"));
+
+        // Criar o produto
+        Produto obj = new Produto();
+        obj.setNome(dto.getNome());
+        obj.setPreco(dto.getPreco());
+        obj.setQtdEstoque(dto.getQtdEstoque());
+        obj.setGrupoProduto(grupoProduto); // associa o grupo existente
+        // A descrição já vem do grupo, não precisa setar dto.descricao
+
+        // Salvar e retornar
         return produtoRepo.save(obj);
     }
+
 
     public void validaProduto(ProdutoDTO dto){
         Optional<GrupoProduto> grupoProduto = grupoProdutoRepo.findById(dto.getGrupoProduto());

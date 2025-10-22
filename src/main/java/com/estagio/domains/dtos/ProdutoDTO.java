@@ -25,20 +25,20 @@ public class ProdutoDTO {
     @NotNull(message = "O campo não pode ser nulo")
     private Long grupoProduto;
 
-    @NotNull(message = "O campo não pode ser nulo")
-    @NotBlank(message = "O campo não pode estar vazio.")
+    // ❌ Removemos a validação do front
     private String descricao;
 
     public ProdutoDTO() {
     }
 
+    // Construtor para retornar produto para o front (read-only)
     public ProdutoDTO(Produto produto) {
         this.id = produto.getId();
         this.nome = produto.getNome();
         this.preco = produto.getPreco();
         this.qtdEstoque = produto.getQtdEstoque();
         this.grupoProduto = produto.getGrupoProduto().getId();
-        this.descricao = produto.getGrupoProduto().getDescricao();
+        this.descricao = produto.getGrupoProduto().getDescricao(); // só para leitura
     }
 
     public Long getId() {
@@ -49,44 +49,43 @@ public class ProdutoDTO {
         this.id = id;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo" ) @NotBlank( message = "O campo não pode estar vazio." ) String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(@NotNull( message = "O campo não pode ser nulo" ) @NotBlank( message = "O campo não pode estar vazio." ) String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo" ) @Digits( integer = 15, fraction = 2 ) BigDecimal getPreco() {
+    public BigDecimal getPreco() {
         return preco;
     }
 
-    public void setPreco(@NotNull( message = "O campo não pode ser nulo" ) @Digits( integer = 15, fraction = 2 ) BigDecimal preco) {
+    public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
 
-    @NotNull( message = "O campo não pode ser nulo" )
     public int getQtdEstoque() {
         return qtdEstoque;
     }
 
-    public void setQtdEstoque(@NotNull( message = "O campo não pode ser nulo" ) int qtdEstoque) {
+    public void setQtdEstoque(int qtdEstoque) {
         this.qtdEstoque = qtdEstoque;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo" ) Long getGrupoProduto() {
+    public Long getGrupoProduto() {
         return grupoProduto;
     }
 
-    public void setGrupoProduto(@NotNull( message = "O campo não pode ser nulo" ) Long grupoProduto) {
+    public void setGrupoProduto(Long grupoProduto) {
         this.grupoProduto = grupoProduto;
     }
 
-    public @NotNull( message = "O campo não pode ser nulo" ) @NotBlank( message = "O campo não pode estar vazio." ) String getDescricao() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(@NotNull( message = "O campo não pode ser nulo" ) @NotBlank( message = "O campo não pode estar vazio." ) String descricao) {
+    public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 }
