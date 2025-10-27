@@ -6,6 +6,7 @@ import com.estagio.domains.enums.StatusPedido;
 import com.estagio.domains.state.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
@@ -31,9 +32,11 @@ public class Pedido {
     private LocalDate data;
 
 
-    @JsonIgnore
+
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Venda> vendas = new ArrayList<>();
+
 
     @JsonIgnore
     @Transient
@@ -46,6 +49,8 @@ public class Pedido {
     @Enumerated(EnumType.STRING)
     @JoinColumn(name = "formaPagamento")
     private FormaPagamento formaPagamento;
+
+
 
     private BigDecimal valorTotal;
 

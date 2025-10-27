@@ -54,13 +54,14 @@ public class DBService {
 
 
         //cria produto
-        Produto produto1 = new Produto(null, "ALFACE", new BigDecimal(15.00), 100, grupoProduto1);
+        Produto produto1 = new Produto(null, "ALFACE", new BigDecimal(15.00), 100, grupoProduto1, "https://www.sitiodamata.com.br/media/catalog/product/cache/bd7e41e8357e6ae06c7d33758afd4978/a/l/alface-crocantela-organica-lactuca-sativa-l_2nd.jpg");
+
         produto1 = produtoRepo.save(produto1);
 
-        Produto produto2 = new Produto(null, "BATATA", new BigDecimal(10.00), 100, grupoProduto2);
+        Produto produto2 = new Produto(null, "BATATA", new BigDecimal(10.00), 100, grupoProduto2,"https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg");
         produto2 = produtoRepo.save(produto2);
 
-        Produto produto3 = new Produto(null, "BETERRABA", new BigDecimal(15.00), 100, grupoProduto2);
+        Produto produto3 = new Produto(null, "BETERRABA", new BigDecimal(15.00), 100, grupoProduto2,"https://www.infoescola.com/wp-content/uploads/2010/02/beterraba_675904528.jpg");
         produto3 = produtoRepo.save(produto3);
 
 

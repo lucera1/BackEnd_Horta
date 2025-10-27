@@ -33,17 +33,21 @@ import java.util.Objects;
     @JoinColumn( name = "idGrupoProduto" )
     private GrupoProduto grupoProduto;
 
+    @Column(columnDefinition = "TEXT")
+    private String imagem;
+
 
     public Produto() {
         this.preco = BigDecimal.ZERO;
     }
 
-    public Produto(Long id, String nome, BigDecimal preco, Integer qtdEstoque, GrupoProduto grupoProduto) {
+    public Produto(Long id, String nome, BigDecimal preco, Integer qtdEstoque, GrupoProduto grupoProduto,String imagem) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.qtdEstoque = qtdEstoque;
         this.grupoProduto = grupoProduto;
+        this.imagem = imagem;
 
     }
 
@@ -54,6 +58,7 @@ import java.util.Objects;
         this.qtdEstoque = dto.getQtdEstoque();
         this.grupoProduto = new GrupoProduto();
         this.grupoProduto.setId(dto.getGrupoProduto());
+        this.imagem = dto.getImagem();
     }
 
 
@@ -97,6 +102,13 @@ import java.util.Objects;
         this.grupoProduto = grupoProduto;
     }
 
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
+    }
 
     @Override
     public boolean equals( Object o ) {

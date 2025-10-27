@@ -3,6 +3,7 @@ package com.estagio.domains;
 import com.estagio.domains.dtos.VendaDTO;
 import com.estagio.domains.produtos.GrupoProduto;
 import com.estagio.domains.produtos.Produto;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
@@ -30,7 +31,7 @@ public class Venda {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pedido_id")
-    @JsonIgnore
+    @JsonBackReference
     private Pedido pedido;
 
     @ManyToOne

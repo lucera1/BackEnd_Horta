@@ -25,20 +25,23 @@ public class ProdutoDTO {
     @NotNull(message = "O campo não pode ser nulo")
     private Long grupoProduto;
 
-    // ❌ Removemos a validação do front
+
     private String descricao;
+
+    @NotNull(message = "A URL da imagem não pode ser nula")
+    private String imagem;
 
     public ProdutoDTO() {
     }
 
-    // Construtor para retornar produto para o front (read-only)
     public ProdutoDTO(Produto produto) {
         this.id = produto.getId();
         this.nome = produto.getNome();
         this.preco = produto.getPreco();
         this.qtdEstoque = produto.getQtdEstoque();
         this.grupoProduto = produto.getGrupoProduto().getId();
-        this.descricao = produto.getGrupoProduto().getDescricao(); // só para leitura
+        this.descricao = produto.getGrupoProduto().getDescricao();
+        this.imagem = produto.getImagem();
     }
 
     public Long getId() {
@@ -87,5 +90,13 @@ public class ProdutoDTO {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public @NotNull(message = "A URL da imagem não pode ser nula") String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(@NotNull(message = "A URL da imagem não pode ser nula") String imagem) {
+        this.imagem = imagem;
     }
 }

@@ -23,57 +23,53 @@ public class ProdutoService {
     @Autowired
     private GrupoProdutoRepository grupoProdutoRepo;
 
-    public List<ProdutoDTO> findAll(){
-        //retorna uma lista de ProdutoDTO
-        return produtoRepo.findAll().stream().map
-                (obj -> new ProdutoDTO(obj)).collect(Collectors.toList());
+    public List<ProdutoDTO> findAll() {
+        return produtoRepo.findAll().stream()
+                .map(ProdutoDTO::new)
+                .collect(Collectors.toList());
     }
 
-    public Produto findbyId(Long id){
+    public Produto findbyId(Long id) {
         Optional<Produto> obj = produtoRepo.findById(id);
-        return obj.orElseThrow(() -> new ObjectNotFoundException("Produto não encontrado! Id: "+id));
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Produto não encontrado! Id: " + id));
     }
 
-
-    public Produto create(ProdutoDTO dto){
+    public Produto create(ProdutoDTO dto) {
         dto.setId(null);
 
-        // Buscar o grupo de produto
         GrupoProduto grupoProduto = grupoProdutoRepo.findById(dto.getGrupoProduto())
                 .orElseThrow(() -> new DataIntegrityViolationException(
                         "Grupo de Produto -" + dto.getGrupoProduto() + " não está cadastrado!"));
 
-        // Criar o produto
         Produto obj = new Produto();
-        obj.setNome(dto.getNome());
-        obj.setPreco(dto.getPreco());
-        obj.setQtdEstoque(dto.getQtdEstoque());
-        obj.setGrupoProduto(grupoProduto); // associa o grupo existente
-        // A descrição já vem do grupo, não precisa setar dto.descricao
+        copyDtoToEntity(dto, obj);
+        obj.setGrupoProduto(grupoProduto);
 
-        // Salvar e retornar
         return produtoRepo.save(obj);
     }
 
+    public Produto update(Long id, ProdutoDTO dto) {
+        Produto entity = findbyId(id);
+        copyDtoToEntity(dto, entity);
 
-    public void validaProduto(ProdutoDTO dto){
-        Optional<GrupoProduto> grupoProduto = grupoProdutoRepo.findById(dto.getGrupoProduto());
-        if(!grupoProduto.isPresent()){
-            throw new DataIntegrityViolationException("Grupo de Produto -"+ dto.getGrupoProduto() +" não está cadastrado!");
-        }
+        GrupoProduto grupoProduto = grupoProdutoRepo.findById(dto.getGrupoProduto())
+                .orElseThrow(() -> new DataIntegrityViolationException(
+                        "Grupo de Produto -" + dto.getGrupoProduto() + " não está cadastrado!"));
 
+        entity.setGrupoProduto(grupoProduto);
+
+        return produtoRepo.save(entity);
     }
 
-    public Produto update(Long id, ProdutoDTO objDto){
-        objDto.setId(id);
-        Produto oldObj = findbyId(id);
-        oldObj = new Produto(objDto);
-        return produtoRepo.save(oldObj);
-    }
-
-    public void delete(Long id){
+    public void delete(Long id) {
         Produto obj = findbyId(id);
         produtoRepo.deleteById(id);
     }
 
+    private void copyDtoToEntity(ProdutoDTO dto, Produto entity) {
+        entity.setNome(dto.getNome());
+        entity.setPreco(dto.getPreco());
+        entity.setQtdEstoque(dto.getQtdEstoque());
+        entity.setImagem(dto.getImagem()); // ✅ campo novo
+    }
 }
