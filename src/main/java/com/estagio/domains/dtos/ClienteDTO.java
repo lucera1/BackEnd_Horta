@@ -39,7 +39,7 @@ public class ClienteDTO {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate createdAt = LocalDate.now();
 
-    private String tipoUsuario;
+    private TipoUsuario tipoUsuario;
 
     public ClienteDTO(){
 
@@ -53,7 +53,7 @@ public class ClienteDTO {
         this.email = obj.getEmail();
         this.password = obj.getPassword();
         this.createdAt = obj.getCreatedAt();
-        this.tipoUsuario = obj.getTipoUsuario().toString();
+        this.tipoUsuario = obj.getTipoUsuario();
     }
 
     public Long getId() {
@@ -84,7 +84,7 @@ public class ClienteDTO {
         return cpf;
     }
 
-    public void setCpf(@NotNull(message = "O campo CPF não pode ser nulo!")  String cpf) {
+    public void setCpf(@NotNull(message = "O campo CPF não pode ser nulo!") String cpf) {
         this.cpf = cpf;
     }
 
@@ -112,13 +112,11 @@ public class ClienteDTO {
         this.createdAt = createdAt;
     }
 
-    public String getTipoUsuario() {
+    public TipoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
 
-    public void setTipoUsuario(String tipoUsuario) {
+    public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
 }
-
-

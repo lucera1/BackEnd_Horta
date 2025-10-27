@@ -34,7 +34,7 @@ public class Cliente extends Usuario{
         this.email = obj.getEmail();
         this.password = obj.getPassword();
         this.createdAt = obj.getCreatedAt();
-        this.setTipoUsuario(TipoUsuario.CLIENTE);
+        this.setTipoUsuario(obj.getTipoUsuario());
 
         }
 
