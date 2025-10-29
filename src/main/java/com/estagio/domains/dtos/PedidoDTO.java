@@ -1,12 +1,12 @@
 package com.estagio.domains.dtos;
 
 import com.estagio.domains.Pedido;
-import com.estagio.domains.enums.FormaPagamento;
-import jakarta.validation.constraints.NotNull;
 
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class PedidoDTO {
 
@@ -27,6 +27,7 @@ public class PedidoDTO {
 
     private String statusPedido;
 
+    private List<VendaResumoDTO> vendas;
 
     public PedidoDTO() {
     }
@@ -34,66 +35,41 @@ public class PedidoDTO {
     public PedidoDTO(Pedido pedido) {
         this.id = pedido.getId();
         this.cliente = pedido.getCliente().getId();
-        this.clienteNome = pedido.getCliente().getFirstName()+" "+pedido.getCliente().getLastName();
+        this.clienteNome = pedido.getCliente().getFirstName() + " " + pedido.getCliente().getLastName();
         this.data = pedido.getData();
         this.valorTotal = pedido.getValorTotal();
         this.formaPagamento = pedido.getFormaPagamento().getPagamento();
         this.statusPedido = pedido.getStatusPedido().toString();
+
+        // Monta a lista de vendas resumidas
+        if (pedido.getVendas() != null) {
+            this.vendas = pedido.getVendas().stream()
+                    .map(VendaResumoDTO::new)
+                    .collect(Collectors.toList());
+        }
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public Long getCliente() { return cliente; }
+    public void setCliente(Long cliente) { this.cliente = cliente; }
 
-    public @NotNull(message = "O campo não pode ser nulo!") Long getCliente() {
-        return cliente;
-    }
+    public String getFormaPagamento() { return formaPagamento; }
+    public void setFormaPagamento(String formaPagamento) { this.formaPagamento = formaPagamento; }
 
-    public void setCliente(@NotNull(message = "O campo não pode ser nulo!") Long cliente) {
-        this.cliente = cliente;
-    }
+    public LocalDate getData() { return data; }
+    public void setData(LocalDate data) { this.data = data; }
 
-    public @NotNull(message = "O campo não pode ser nulo!") String getFormaPagamento() {
-        return formaPagamento;
-    }
+    public BigDecimal getValorTotal() { return valorTotal; }
+    public void setValorTotal(BigDecimal valorTotal) { this.valorTotal = valorTotal; }
 
-    public void setFormaPagamento(@NotNull(message = "O campo não pode ser nulo!") String formaPagamento) {
-        this.formaPagamento = formaPagamento;
-    }
+    public String getClienteNome() { return clienteNome; }
+    public void setClienteNome(String clienteNome) { this.clienteNome = clienteNome; }
 
-    public @NotNull(message = "O campo não pode ser nulo!") LocalDate getData() {
-        return data;
-    }
+    public String getStatusPedido() { return statusPedido; }
+    public void setStatusPedido(String statusPedido) { this.statusPedido = statusPedido; }
 
-    public void setData(@NotNull(message = "O campo não pode ser nulo!") LocalDate data) {
-        this.data = data;
-    }
-
-    public BigDecimal getValorTotal() {
-        return valorTotal;
-    }
-
-    public void setValorTotal(BigDecimal valorTotal) {
-        this.valorTotal = valorTotal;
-    }
-
-    public String getClienteNome() {
-        return clienteNome;
-    }
-
-    public void setClienteNome(String clienteNome) {
-        this.clienteNome = clienteNome;
-    }
-
-    public String getStatusPedido() {
-        return statusPedido;
-    }
-
-    public void setStatusPedido(String statusPedido) {
-        this.statusPedido = statusPedido;
-    }
+    public List<VendaResumoDTO> getVendas() { return vendas; }
+    public void setVendas(List<VendaResumoDTO> vendas) { this.vendas = vendas; }
 }
