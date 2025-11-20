@@ -54,15 +54,49 @@ public class DBService {
 
 
         //cria produto
-        Produto produto1 = new Produto(null, "ALFACE", new BigDecimal(15.00), 100, grupoProduto1, "https://www.sitiodamata.com.br/media/catalog/product/cache/bd7e41e8357e6ae06c7d33758afd4978/a/l/alface-crocantela-organica-lactuca-sativa-l_2nd.jpg");
-
+        Produto produto1 = new Produto(null, "ALFACE", new BigDecimal(15.00), 100, grupoProduto1,
+                "https://www.sitiodamata.com.br/media/catalog/product/cache/bd7e41e8357e6ae06c7d33758afd4978/a/l/alface-crocantela-organica-lactuca-sativa-l_2nd.jpg");
         produto1 = produtoRepo.save(produto1);
 
-        Produto produto2 = new Produto(null, "BATATA", new BigDecimal(10.00), 100, grupoProduto2,"https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg");
+        Produto produto2 = new Produto(null, "BATATA", new BigDecimal(10.00), 100, grupoProduto2,
+                "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg");
         produto2 = produtoRepo.save(produto2);
 
-        Produto produto3 = new Produto(null, "BETERRABA", new BigDecimal(15.00), 100, grupoProduto2,"https://www.infoescola.com/wp-content/uploads/2010/02/beterraba_675904528.jpg");
+        Produto produto3 = new Produto(null, "BETERRABA", new BigDecimal(15.00), 100, grupoProduto2,
+                "https://www.infoescola.com/wp-content/uploads/2010/02/beterraba_675904528.jpg");
         produto3 = produtoRepo.save(produto3);
+
+
+
+        Produto produto4 = new Produto(null, "COUVE", new BigDecimal(12.00), 80, grupoProduto1,
+                "https://static.tuasaude.com/media/article/hr/uq/couve_19790.webp");
+        produto4 = produtoRepo.save(produto4);
+
+        Produto produto5 = new Produto(null, "ESPINAFRE", new BigDecimal(14.00), 70, grupoProduto1,
+                "https://www.proativaalimentos.com.br/wp-content/uploads/2021/09/espinafre-1024x759.jpg");
+        produto5 = produtoRepo.save(produto5);
+
+        Produto produto6 = new Produto(null, "RÚCULA", new BigDecimal(11.00), 90, grupoProduto1,
+                "https://www.infoescola.com/wp-content/uploads/2008/06/rucula.jpg");
+        produto6 = produtoRepo.save(produto6);
+
+
+        
+        Produto produto7 = new Produto(null, "CENOURA", new BigDecimal(12.00), 150, grupoProduto2,
+                "https://static.tuasaude.com/media/article/hr/mx/cenoura_19022_l.jpg");
+        produto7 = produtoRepo.save(produto7);
+
+        Produto produto8 = new Produto(null, "TOMATE", new BigDecimal(18.00), 120, grupoProduto2,
+                "https://www.infoescola.com/wp-content/uploads/2008/03/tomate-308x231.jpg");
+        produto8 = produtoRepo.save(produto8);
+
+        Produto produto9 = new Produto(null, "ABOBRINHA", new BigDecimal(9.00), 100, grupoProduto2,
+                "https://www.proativaalimentos.com.br/wp-content/uploads/2021/06/abobrinha-brasileira-1024x682.jpg");
+        produto9 = produtoRepo.save(produto9);
+
+        Produto produto10 = new Produto(null, "BERINJELA", new BigDecimal(16.00), 110, grupoProduto2,
+                "https://www.infoescola.com/wp-content/uploads/2010/02/berinjela.jpg");
+        produto10 = produtoRepo.save(produto10);
 
 
         // cria cliente e salva
