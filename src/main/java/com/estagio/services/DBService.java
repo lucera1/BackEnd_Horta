@@ -69,33 +69,33 @@ public class DBService {
 
 
         Produto produto4 = new Produto(null, "COUVE", new BigDecimal(12.00), 80, grupoProduto1,
-                "https://static.tuasaude.com/media/article/hr/uq/couve_19790.webp");
+                "https://images.tcdn.com.br/img/img_prod/763396/couve_manteiga_169_1_20200320135333.jpg");
         produto4 = produtoRepo.save(produto4);
 
         Produto produto5 = new Produto(null, "ESPINAFRE", new BigDecimal(14.00), 70, grupoProduto1,
-                "https://www.proativaalimentos.com.br/wp-content/uploads/2021/09/espinafre-1024x759.jpg");
+                "https://hortifrutibr.vtexassets.com/arquivos/ids/173610/Espinafre.jpg.jpg?v=638888917235370000");
         produto5 = produtoRepo.save(produto5);
 
         Produto produto6 = new Produto(null, "RÚCULA", new BigDecimal(11.00), 90, grupoProduto1,
-                "https://www.infoescola.com/wp-content/uploads/2008/06/rucula.jpg");
+                "https://www.hortifruti.com.br/_next/image?url=https%3A%2F%2Fhortifrutibr.vtexassets.com%2Farquivos%2Fids%2F175429%2Fd18168c0153a7145243953c3c02916cdeeae3e-Photoroom.jpg%3Fv%3D638888912908130000%26format%3Dwebp&w=1440&q=75");
         produto6 = produtoRepo.save(produto6);
 
 
-        
+
         Produto produto7 = new Produto(null, "CENOURA", new BigDecimal(12.00), 150, grupoProduto2,
-                "https://static.tuasaude.com/media/article/hr/mx/cenoura_19022_l.jpg");
+                "https://www.infoescola.com/wp-content/uploads/2010/08/cenoura_250834906.jpg");
         produto7 = produtoRepo.save(produto7);
 
         Produto produto8 = new Produto(null, "TOMATE", new BigDecimal(18.00), 120, grupoProduto2,
-                "https://www.infoescola.com/wp-content/uploads/2008/03/tomate-308x231.jpg");
+                "https://webrun.com.br/wp-content/uploads/2024/02/AdobeStock_69282769.jpeg");
         produto8 = produtoRepo.save(produto8);
 
         Produto produto9 = new Produto(null, "ABOBRINHA", new BigDecimal(9.00), 100, grupoProduto2,
-                "https://www.proativaalimentos.com.br/wp-content/uploads/2021/06/abobrinha-brasileira-1024x682.jpg");
+                "https://urbanfarmipiranga.com.br/wp-content/uploads/2022/09/7309.png");
         produto9 = produtoRepo.save(produto9);
 
         Produto produto10 = new Produto(null, "BERINJELA", new BigDecimal(16.00), 110, grupoProduto2,
-                "https://www.infoescola.com/wp-content/uploads/2010/02/berinjela.jpg");
+                "https://imagens.valesaude.com.br/images/beneficios-da-berinjela-conheca-as-vantagens-no-consumo-do-legume.webp");
         produto10 = produtoRepo.save(produto10);
 
 
