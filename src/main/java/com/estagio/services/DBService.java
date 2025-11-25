@@ -110,10 +110,28 @@ public class DBService {
 
 
         //cria pedido
-        Pedido pedido1 = new Pedido(null, cliente1, LocalDate.now(), FormaPagamento.DINHEIRO);
+        Pedido pedido1 = new Pedido(
+                null, cliente1, LocalDate.now(), FormaPagamento.DINHEIRO,
+                "Rua das Flores, 123",
+                "Centro",
+                "Populina",
+                "15670-000",
+                "Casa amarela com muro azul",
+                "Dona Maria",
+                "(17) 99999-0000"
+        );
         pedido1 = pedidoRepo.save(pedido1);
 
-        Pedido pedido2 = new Pedido(null, cliente2, LocalDate.now(), FormaPagamento.DINHEIRO);
+        Pedido pedido2 = new Pedido(
+                null, cliente2, LocalDate.now(), FormaPagamento.PIX,
+                "Avenida Brasil, 890",
+                "Jardim Bela Vista",
+                "Populina",
+                "15670-000",
+                "Próximo ao posto de saúde",
+                "Seu José",
+                "(17) 98888-1111"
+        );
         pedido2 = pedidoRepo.save(pedido2);
 
         //cria venda

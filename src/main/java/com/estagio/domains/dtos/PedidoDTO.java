@@ -1,8 +1,8 @@
 package com.estagio.domains.dtos;
 
 import com.estagio.domains.Pedido;
-
 import jakarta.validation.constraints.NotNull;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -29,25 +29,45 @@ public class PedidoDTO {
 
     private List<VendaResumoDTO> vendas;
 
+
+    private String enderecoEntrega;
+    private String bairroEntrega;
+    private String cidadeEntrega;
+    private String cepEntrega;
+    private String referenciaEntrega;
+    private String nomeRecebedor;
+    private String telefoneContato;
+
     public PedidoDTO() {
     }
 
     public PedidoDTO(Pedido pedido) {
         this.id = pedido.getId();
-        this.cliente = pedido.getCliente().getId();
-        this.clienteNome = pedido.getCliente().getFirstName() + " " + pedido.getCliente().getLastName();
+        this.cliente = pedido.getCliente() != null ? pedido.getCliente().getId() : null;
+        this.clienteNome = pedido.getCliente() != null ? pedido.getCliente().getFirstName() + " " + pedido.getCliente().getLastName() : null;
         this.data = pedido.getData();
         this.valorTotal = pedido.getValorTotal();
-        this.formaPagamento = pedido.getFormaPagamento().getPagamento();
-        this.statusPedido = pedido.getStatusPedido().toString();
+        this.formaPagamento = pedido.getFormaPagamento() != null ? pedido.getFormaPagamento().getPagamento() : null;
+        this.statusPedido = pedido.getStatusPedido() != null ? pedido.getStatusPedido().toString() : null;
 
-        // Monta a lista de vendas resumidas
+
         if (pedido.getVendas() != null) {
             this.vendas = pedido.getVendas().stream()
                     .map(VendaResumoDTO::new)
                     .collect(Collectors.toList());
         }
+
+
+        this.enderecoEntrega = pedido.getEnderecoEntrega();
+        this.bairroEntrega = pedido.getBairroEntrega();
+        this.cidadeEntrega = pedido.getCidadeEntrega();
+        this.cepEntrega = pedido.getCepEntrega();
+        this.referenciaEntrega = pedido.getReferenciaEntrega();
+        this.nomeRecebedor = pedido.getNomeRecebedor();
+        this.telefoneContato = pedido.getTelefoneContato();
     }
+
+
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -72,4 +92,26 @@ public class PedidoDTO {
 
     public List<VendaResumoDTO> getVendas() { return vendas; }
     public void setVendas(List<VendaResumoDTO> vendas) { this.vendas = vendas; }
+
+
+    public String getEnderecoEntrega() { return enderecoEntrega; }
+    public void setEnderecoEntrega(String enderecoEntrega) { this.enderecoEntrega = enderecoEntrega; }
+
+    public String getBairroEntrega() { return bairroEntrega; }
+    public void setBairroEntrega(String bairroEntrega) { this.bairroEntrega = bairroEntrega; }
+
+    public String getCidadeEntrega() { return cidadeEntrega; }
+    public void setCidadeEntrega(String cidadeEntrega) { this.cidadeEntrega = cidadeEntrega; }
+
+    public String getCepEntrega() { return cepEntrega; }
+    public void setCepEntrega(String cepEntrega) { this.cepEntrega = cepEntrega; }
+
+    public String getReferenciaEntrega() { return referenciaEntrega; }
+    public void setReferenciaEntrega(String referenciaEntrega) { this.referenciaEntrega = referenciaEntrega; }
+
+    public String getNomeRecebedor() { return nomeRecebedor; }
+    public void setNomeRecebedor(String nomeRecebedor) { this.nomeRecebedor = nomeRecebedor; }
+
+    public String getTelefoneContato() { return telefoneContato; }
+    public void setTelefoneContato(String telefoneContato) { this.telefoneContato = telefoneContato; }
 }

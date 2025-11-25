@@ -49,17 +49,29 @@ public class PedidoService {
         Cliente cliente = clienteService.findbyId(obj.getCliente());
 
         Pedido pedido = new Pedido();
-        if(obj.getId() != null){
+        if (obj.getId() != null) {
             pedido.setId(obj.getId());
         }
 
         pedido.setCliente(cliente);
+        pedido.setData(obj.getData());
+
+
+        pedido.setEnderecoEntrega(obj.getEnderecoEntrega());
+        pedido.setBairroEntrega(obj.getBairroEntrega());
+        pedido.setCidadeEntrega(obj.getCidadeEntrega());
+        pedido.setCepEntrega(obj.getCepEntrega());
+        pedido.setReferenciaEntrega(obj.getReferenciaEntrega());
+        pedido.setNomeRecebedor(obj.getNomeRecebedor());
+        pedido.setTelefoneContato(obj.getTelefoneContato());
+
+
         pedido.setStatusPedido(StatusPedido.AGUARDANDO_PAGAMENTO);
         pedido.setFormaPagamento(FormaPagamento.valueOf(obj.getFormaPagamento().toUpperCase()));
 
-
         return pedido;
     }
+
 
     public Pedido create (PedidoDTO objDto){
         return pedidoRepo.save(newsPedido(objDto));
