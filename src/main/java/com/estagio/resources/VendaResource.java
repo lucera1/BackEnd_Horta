@@ -18,21 +18,30 @@ public class VendaResource {
     private VendaService vendaService;
 
     @GetMapping
-    public ResponseEntity<List<Venda>> findAll() {
-        List<Venda> vendas = vendaService.findAll();
+    public ResponseEntity<List<VendaDTO>> findAll() {
+        List<VendaDTO> vendas = vendaService.findAll()
+                .stream()
+                .map(VendaDTO::new)
+                .toList();
+
         return ResponseEntity.ok(vendas);
     }
 
+
     @GetMapping("/{id}")
-    public ResponseEntity<Venda> findById(@PathVariable Long id) {
+    public ResponseEntity<VendaDTO> findById(@PathVariable Long id) {
         Venda venda = vendaService.findById(id);
-        return ResponseEntity.ok(venda);
+        return ResponseEntity.ok(new VendaDTO(venda));
     }
 
+
     @PostMapping
-    public ResponseEntity<Venda> criarVenda(@RequestBody VendaDTO dto) {
+    public ResponseEntity<VendaDTO> criarVenda(@RequestBody VendaDTO dto) {
         Venda venda = vendaService.create(dto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(venda);
+        return ResponseEntity.status(HttpStatus.CREATED).body(new VendaDTO(venda));
     }
+
+
+
 }
 

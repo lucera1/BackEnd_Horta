@@ -1,12 +1,9 @@
 package com.estagio.domains;
 
-import com.estagio.domains.dtos.VendaDTO;
 import com.estagio.domains.produtos.GrupoProduto;
 import com.estagio.domains.produtos.Produto;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -28,7 +25,6 @@ public class Venda {
 
     private BigDecimal subTotal;
 
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pedido_id")
     @JsonBackReference
@@ -41,91 +37,54 @@ public class Venda {
     @Transient
     private GrupoProduto grupoProduto;
 
-    public Venda() {
-
-
-    }
+    public Venda() {}
 
     public Venda(Long id, Cliente cliente, Produto produto, Integer quantidade) {
         this.id = id;
-        this.produto = produto;
-        this.quantidade = quantidade;
-        this.subTotal = calcularSubTotal();
         this.cliente = cliente;
         this.produto = produto;
-
+        this.quantidade = quantidade;
+        atualizarSubTotal();
     }
 
-    public Venda ( VendaDTO dto ){
-        this.id = dto.getId();
-        this.quantidade = dto.getQuantidade();
-        this.cliente = new Cliente();
-        this.cliente.setId(dto.getClienteId());
-        this.produto = new Produto();
-        this.produto.setId(dto.getProdutoId());
-        this.subTotal = calcularSubTotal();
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Produto getProduto() {
-        return produto;
-    }
-
+    public Produto getProduto() { return produto; }
     public void setProduto(Produto produto) {
         this.produto = produto;
+        atualizarSubTotal();
     }
 
-    public Integer getQuantidade() {
-        return quantidade;
-    }
-
+    public Integer getQuantidade() { return quantidade; }
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+        atualizarSubTotal();
     }
 
-    public BigDecimal getSubTotal() {
-        return subTotal;
-    }
+    public BigDecimal getSubTotal() { return subTotal; }
+    public void setSubTotal(BigDecimal subTotal) { this.subTotal = subTotal; }
 
-    public void setSubTotal(BigDecimal subTotal) {
-        this.subTotal = subTotal;
-    }
+    public Pedido getPedido() { return pedido; }
+    public void setPedido(Pedido pedido) { this.pedido = pedido; }
 
-    public Pedido getPedido() {
-        return pedido;
-    }
+    public Cliente getCliente() { return cliente; }
+    public void setCliente(Cliente cliente) { this.cliente = cliente; }
 
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-
+    public GrupoProduto getGrupoProduto() { return grupoProduto; }
+    public void setGrupoProduto(GrupoProduto grupoProduto) { this.grupoProduto = grupoProduto; }
 
     public BigDecimal calcularSubTotal() {
-        if (produto == null || quantidade == null) {
+        if (produto == null || produto.getPreco() == null || quantidade == null) {
             return BigDecimal.ZERO;
         }
 
-        BigDecimal valorUnitario = produto.getPreco(); // deve ser BigDecimal
-        return valorUnitario.multiply(BigDecimal.valueOf(quantidade)).setScale(2, RoundingMode.HALF_EVEN);
+        return produto.getPreco()
+                .multiply(BigDecimal.valueOf(quantidade))
+                .setScale(2, RoundingMode.HALF_EVEN);
     }
 
+    public void atualizarSubTotal() {
+        this.subTotal = calcularSubTotal();
+    }
 }
-
-
