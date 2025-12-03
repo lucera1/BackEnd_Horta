@@ -181,7 +181,7 @@ npx serve
 
 Acessar: http://localhost:3000
 
-🔒 O sistema redireciona automaticamente para login.html se não houver token.
+🔒 O sistema redireciona automaticamente para login.html se não houver token
 
 # 🔧 Banco de Dados
 
